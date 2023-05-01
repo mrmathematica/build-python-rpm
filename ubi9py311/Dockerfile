@@ -5,7 +5,7 @@ RUN yum install -y ruby-devel gcc make rpm-build rubygems
 RUN gem install --no-document fpm
 
 RUN yum install -y --enablerepo=crb ncurses-devel openssl-devel bzip2-devel libffi-devel sqlite-devel \
-    gdbm-devel readline-devel tk-devel
+    gdbm-devel readline-devel tk-devel xz-devel libuuid-devel
 
 ENV BUILD_VER=3.11.3
 ENV DLURL=http://python.org/ftp/python/${BUILD_VER}/Python-${BUILD_VER}.tgz
