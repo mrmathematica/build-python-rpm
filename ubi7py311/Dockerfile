@@ -8,7 +8,7 @@ RUN yum install -y ncurses-devel sqlite-devel bzip2-devel libnsl2-devel\
     gdbm-devel xz-devel libuuid-devel zlib-devel tk-devel libffi-devel\
     openssl11-devel tcl-devel pkgconfig readline-devel
 
-ENV BUILD_VER=3.11.3
+ENV BUILD_VER=3.11.6
 ENV DLURL=http://python.org/ftp/python/${BUILD_VER}/Python-${BUILD_VER}.tgz
 RUN mkdir -p /build; cd /build\
     && curl -L ${DLURL} | tar xz
