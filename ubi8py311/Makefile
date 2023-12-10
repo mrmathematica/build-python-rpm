@@ -1,4 +1,4 @@
-TARGET:=python-3.11.6
+TARGET:=python-3.11.7
 ARCH:=$(shell uname -m)
 OUTPUT:=$(TARGET)-1.el8.$(ARCH).rpm
 build: $(OUTPUT)

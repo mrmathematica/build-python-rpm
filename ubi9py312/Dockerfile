@@ -7,7 +7,7 @@ RUN gem install --no-document fpm
 RUN yum install -y --enablerepo=crb ncurses-devel openssl-devel bzip2-devel libffi-devel sqlite-devel \
     gdbm-devel readline-devel tk-devel xz-devel libuuid-devel
 
-ENV BUILD_VER=3.12.0
+ENV BUILD_VER=3.12.1
 ENV DLURL=http://python.org/ftp/python/${BUILD_VER}/Python-${BUILD_VER}.tgz
 RUN mkdir -p /build; cd /build\
     && curl -L ${DLURL} | tar xz
